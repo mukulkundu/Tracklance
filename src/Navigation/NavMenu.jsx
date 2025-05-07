@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 
 
@@ -35,10 +35,11 @@ export default function NavMenu(){
 
     return(
         <div>
-            <ul className="text-xl">
+            <div className="px-4 text-3xl h-[9dvh] flex items-center"><Link to='/'><img className="w-40" src="Logo.png" alt="Logo" /></Link></div>
+            <ul className=" text-lg">
                 {items.map((item) => (
-                    <li key={item.name} className=" py-5 px-5 hover:bg-gray-300 duration-75 cursor-pointer">
-                        <button className="cursor-pointer" onClick={() => navigate(item.slug)}>{item.name}</button>
+                    <li key={item.name} className=" py-5 px-6 text-xl hover:bg-[#047050] cursor-pointer duration-75" onClick={() => navigate(item.slug)}>
+                        <button className="cursor-pointer">{item.name}</button>
                     </li>
                 ))}
             </ul>

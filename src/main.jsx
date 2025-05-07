@@ -8,11 +8,13 @@ import Update from './Components/Update'
 import History from './Components/History'
 import Category from './Components/Category'
 import Settings from './Components/Settings'
+import Home from './Components/Home'
 
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout/>}>
+      <Route path='' element={<Home/>}/>
       <Route path='/dashboard' element={<Dashboard/>}/>
       <Route path='/update' element={<Update/>}/>
       <Route path='/history' element={<History/>}/>

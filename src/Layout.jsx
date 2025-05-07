@@ -6,15 +6,14 @@ import { Outlet } from "react-router-dom";
 
 export default function Layout() {
     return (
-        <div className="flex flex-col h-screen">
-            <NavBar />
-            <div className="flex flex-grow">
-                <div className="w-[15dvw] border-r-1 border-gray-500">
-                    <NavMenu />
-                </div>
-                <div className="w-[85dvw] flex-grow">
-                    <Outlet />
-                </div>
+
+        <div className="flex h-screen">
+            <div className="w-[15dvw] border-r-1 bg-[#04844c] text-white">
+                <NavMenu/>
+            </div>
+            <div className="w-[85dvw]">
+                <NavBar/>
+                <Outlet/>
             </div>
         </div>
     );

@@ -1,13 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
-export default function NavBar(){
+export default function NavBar() {
 
 
-    return(
-        <div className="text-2xl py-2 flex justify-center items-center border-b-1 border-gray-500">
-            <Link to='/'>Tracklance</Link>
+    return (
+        <div className="text-xl py-2 px-4 flex justify-between items-center h-[9dvh] bg-[#faf9f3]">
+            <div>[Current Page Name]</div>
+            <div>[Dark Mode]</div>
         </div>
     )
-    
+
 }
