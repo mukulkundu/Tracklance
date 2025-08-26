@@ -1,11 +1,11 @@
 
 
-import NavMenu from '../src/Navigation/NavMenu'
-import NavBar from '../src/Navigation/NavBar'
+import NavMenu from './Pages/Navigation/NavMenu'
+import NavBar from './Pages/Navigation/NavBar'
 import { Outlet } from "react-router-dom";
 
 
-export default function Layout() {
+export default function ProtectedLayout() {
     return (
 
         <div className="flex h-screen">
