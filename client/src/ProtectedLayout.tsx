@@ -1,7 +1,7 @@
 
 
-import NavMenu from './Pages/Navigation/NavMenu'
-import NavBar from './Pages/Navigation/NavBar'
+import NavMenu from './Components/Navigation/NavMenu'
+import NavBar from './Components/Navigation/NavBar'
 import { Outlet } from "react-router-dom";
 
 
